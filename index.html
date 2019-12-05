@@ -1,0 +1,1701 @@
+<div id="hc_richmedia">
+    <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/ikea/27565.css" media="screen" />
+		<style type="text/css">
+        #hc_richmedia {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .table {
+            display: table;
+        }
+        
+        .table-row {
+            display: table-row;
+        }
+        
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        #hc_richmedia .hc_expand {
+            background: transparent url('images/ikea/45269.gif') no-repeat;
+            width: 320px;
+            height: 50px;
+            display: block;
+            background-size: contain;
+			margin: 0 auto;
+        }
+        
+        #hc_richmedia .hc_closebtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            cursor: pointer;
+            display: block;
+            font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: white;
+            margin: .5em;
+            text-indent: -99999px;
+            background: transparent url('images/ikea/close.png') no-repeat;
+            background-size: contain;
+            width: 20%;
+	        max-width: 45px;
+            height: 26px;
+        }
+        
+        #hc_richmedia .hc_closebtn img {
+            position: relative;
+            z-index: 20;
+        }
+        
+        #hc_richmedia .hc_content {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        #hc_richmedia .hc_wrapper a {
+            display: block;
+            height: 30px;
+            width: 87%;
+            top: 248px;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        #hc_header {
+            height: 100px;
+            background-color: #00bbd0;
+            text-align: left;
+            position: relative;
+			z-index: 3;
+        }
+        
+        #hc_header .hc_btn_bedroom {
+            display: block;
+            width: 135px;
+            height: 30px;
+            background: transparent url('images/ikea/45281.png') no-repeat;
+            background-size: cover;
+            float: left;
+            text-indent: -9999px;
+            top: 20px;
+            position: relative;
+            margin-left: .5em;
+			background-position: 0 100%;
+        }
+        
+        #hc_header .hc_btn_bathroom {
+            display: block;
+            width: 135px;
+            height: 30px;
+            background: transparent url('images/ikea/spriteBtn_bath.png') no-repeat;
+            background-size: cover;
+            float: left;
+            text-indent: -9999px;
+            top: 20px;
+            position: relative;
+            margin-left: .5em;
+        }
+        #hc_header .hc_btn_bedroom.selected {
+			background-position: 0 0%;
+        }
+        
+        #hc_header .hc_btn_bathroom.selected {
+			background-position: 0 100%;
+
+        }
+		.hc_header_back { display: none; }
+        #hc_header .hc_btn_back {
+            display: block;
+            width: 125px;
+            height: 40px;
+            background: transparent url('images/ikea/btn_back.png') no-repeat;
+            background-size: contain;
+            float: left;
+            text-indent: -9999px;
+            top: 23px;
+            position: relative;
+            margin-left: .6em;
+        }
+        
+        .hc_logo {
+            width: 70px;
+			top: 12px;
+			margin-left: 12px;
+            position: relative;
+        }
+        .hc_designroom {
+            width: 150px;
+			display: block;
+			top: 18px;
+			margin-left: 13px;
+			margin-right: 30px;
+			margin-top: 0;
+            position: relative;
+		}
+         .flexslider {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -o-box-shadow: none;
+            margin: 0 auto;
+            background: transparent;
+            border: 0;
+            width: 230px;
+
+            margin: 3% auto;
+            display: none;
+            height: 100%;
+        }
+        
+        div .flex-direction-nav .flex-prev,
+        div .flex-direction-nav .flex-prev:hover {
+            background-image: url('images/ikea/spriteFlexnav.png') !important;
+            display: block;
+            width: 30px;
+            height: 30px;
+            z-index: 30;
+            background-size: 200%;
+        }
+        
+        div .flex-direction-nav .flex-next,
+        div .flex-direction-nav .flex-next:hover {
+            background-image: url('images/ikea/spriteFlexnav.png') !important;
+            display: block;
+            width: 30px;
+            height: 30px;
+            z-index: 30;
+            background-size: 200%;
+        }
+        
+        .flex-direction-nav .flex-next {
+            background-position: 100% 0;
+            right: 5px;
+        }
+        
+        .flex-direction-nav .flex-prev {
+            left: 5px;
+        }
+        
+        
+        .flexslider .flex-next, .flexslider .flex-prev {
+            opacity: 1;
+        }
+        
+        .flex-direction-nav .flex-disabled {
+            opacity: 0 !important;
+        }
+        
+        .slides li {
+            height: 250px;
+        }
+        
+        .slides p strong {
+            padding: 0 !important;
+        }
+        
+        .flex-viewport {
+        }
+        
+        .flex-direction-nav {
+            top: -84px;
+            position: relative;
+        }
+        
+        .slides li a {
+            display: block;
+            width: 110px;
+            height: 25px;
+            margin: 0 auto;
+            position: relative;
+            top: 150px;
+        }
+        
+        /* Flexslider definitions */
+        #hc_bath1_flexslider {
+            display: block;
+        }
+        
+        #hc_bed1_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bedslot1.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 500%;
+        }
+        
+        #hc_bed1_flexslider .slides li#bed1_svelvik {
+            background-position: 0 0;
+        }
+        
+        #hc_bed1_flexslider .slides li#bed1_nordli {
+            background-position: 25% 0;
+        }
+        
+        #hc_bed1_flexslider .slides li#bed1_malm {
+            background-position: 50% 0;
+        }
+        
+        #hc_bed1_flexslider .slides li#bed1_fjell {
+            background-position: 75% 0;
+        }
+        
+        #hc_bed1_flexslider .slides li#bed1_hurdal {
+            background-position: 100% 0;
+        }
+        
+        #hc_bed2_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bedslot2.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 500%;
+        }
+        
+        #hc_bed2_flexslider .slides li#bed2_hemnes {
+            background-position: 0 0;
+        }
+        
+        #hc_bed2_flexslider .slides li#bed2_sveio {
+            background-position: 25% 0;
+        }
+        
+        #hc_bed2_flexslider .slides li#bed2_vettre {
+            background-position: 50% 0;
+        }
+        
+         #hc_bed2_flexslider .slides li#bed2_kallax {
+            background-position: 75% 0;
+        }
+        
+       #hc_bed2_flexslider .slides li#bed2_hurdal {
+            background-position: 100% 0;
+        }
+        
+        #hc_bed3_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bedslot3.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 300%; 
+        }
+        
+        #hc_bed3_flexslider .slides li#bed3_ekby {
+            background-position: 0 0;
+        }
+        
+        #hc_bed3_flexslider .slides li#bed3_fjell {
+            background-position: 50% 0;
+        }
+        
+        #hc_bed3_flexslider .slides li#bed3_lack {
+            background-position: 100% 0;
+        }
+        
+        #hc_bed4_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bedslot4.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 400%;
+        }
+        
+        #hc_bed4_flexslider .slides li#bed4_hemnes {
+            background-position: 0 0;
+        }
+        
+       #hc_bed4_flexslider .slides li#bed4_fjell {
+            background-position: 33% 0;
+        }
+        
+        #hc_bed4_flexslider .slides li#bed4_kallax {
+            background-position: 66% 0;
+        }        
+        
+        #hc_bed4_flexslider .slides li#bed4_hurdal {
+            background-position: 100% 0;
+        }
+        
+        #hc_bath1_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bathslot1.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 500%;
+        }
+
+        #hc_bath1_flexslider .slides li#bath1_hemnes {
+            background-position: 0 0;
+        }
+        
+       #hc_bath1_flexslider .slides li#bath1_godmorgon {
+            background-position: 25% 0;
+        }
+        
+        #hc_bath1_flexslider .slides li#bath1_godmorgon_sm {
+            background-position: 50% 0;
+        }        
+        
+        #hc_bath1_flexslider .slides li#bath1_godmorgon_lg {
+            background-position: 75% 0;
+        }
+        
+        #hc_bath1_flexslider .slides li#bath1_odensvik {
+            background-position: 100% 0;
+        }
+        
+        #hc_bath2_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bathslot2.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 500%;
+        }
+
+        #hc_bath2_flexslider .slides li#bath2_hemnes_white {
+            background-position: 0 0;
+        }
+        
+       #hc_bath2_flexslider .slides li#bath2_godmorgon {
+            background-position: 25% 0;
+        }
+        
+        #hc_bath2_flexslider .slides li#bath2_ragrund {
+            background-position: 50% 0;
+        }        
+        
+        #hc_bath2_flexslider .slides li#bath2_storjorm {
+            background-position: 75% 0;
+        }
+        
+        #hc_bath2_flexslider .slides li#bath2_hemnes_black {
+            background-position: 100% 0;
+        }
+        
+        #hc_bath3_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bathslot3.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 300%;
+        }
+
+        #hc_bath3_flexslider .slides li#bath3_godmorgon {
+            background-position: 0 0;
+        }
+        
+       #hc_bath3_flexslider .slides li#bath3_ragrund {
+            background-position: 50% 0;
+        }
+        
+        #hc_bath3_flexslider .slides li#bath3_hemnes {
+            background-position: 100% 0;
+        }
+        
+        #hc_bath4_flexslider .slides li {
+            background: transparent url('images/ikea/sprite_bathslot4.png') no-repeat;
+            margin: 0 auto;
+            height: 182px;
+            background-size: 300%;
+        }
+
+        #hc_bath4_flexslider .slides li#bath4_godmorgon {
+            background-position: 0 0;
+        }
+        
+       #hc_bath4_flexslider .slides li#bath4_ragrund {
+            background-position: 50% 0;
+        }
+        
+       #hc_bath4_flexslider .slides li#bath4_hemnes {
+            background-position: 100% 0;
+        }
+        
+		/* BUTTONS */
+		
+        a#btn_selectBed1 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/btn_addbed.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 20%;
+            position: relative;
+            top: 30%;
+        }
+        
+        a#btn_selectBed2 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/45262.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 15%;
+            position: relative;
+            top: 30%;
+        }
+        
+        a#btn_selectBed3 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/btn_moreitems.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: -15%;
+            position: relative;
+            top: 10%;
+        }
+        
+        a#btn_selectBed4 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/45262.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 50%;
+            position: relative;
+            top: 25%;
+        }
+
+        a#btn_selectBath1 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/btn_addsink.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 30%;
+            position: relative;
+            top: 40%;
+        }
+        
+        a#btn_selectBath2 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/45211.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 40%;
+            position: relative;
+            top: 0;
+        }
+        
+        a#btn_selectBath3 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/btn_moreitems.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 0;
+            position: relative;
+            top: 30%;
+        }
+        
+        a#btn_selectBath4 {
+            display: block;
+            width: 150px;
+            background: transparent url('images/ikea/45262.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 100px;
+            left: 68px;
+            position: relative;
+            top: 80px;
+        }
+
+        a.hc_btnNext {
+            display: none;
+            width: 90px;
+            background: transparent url('images/ikea/btn_next.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 50px;
+            right: 0;
+            position: absolute;
+            bottom: -5px;
+        }
+        
+        
+        
+			
+	    #hc_stage {
+				position: relative;
+				}
+            #hc_stage img.hc_shim{
+                position: relative;
+				width: 100%;
+				visibility: hidden;
+            }
+        /* bedroom elements */
+
+            #hc_bedroom {
+                position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+                background: transparent url('images/ikea/45485.jpg') no-repeat;
+                background-size: cover;
+
+				display: none;
+            }
+            #hc_bedroom .hc_set img {
+                position: absolute;
+                display: none;
+                width: 100%;
+                display: none;
+                 top: -6%;
+                left: 0;
+           }
+            #hc_bedroom .hc_set .hc_choicethree img {
+				top: 23%;
+				left: -5%;
+            }
+            #hc_bedroom .hc_set .hc_choicethree img.bed3_ekby {
+				top: 5%;
+            }
+            #hc_bedroom .hc_set .hc_choicefour img.bed4_kallax, #hc_bedroom .hc_set .hc_choicefour img.bed4_fjell {
+				top: -16%;
+            }
+
+            /* bathroom elements */
+
+            #hc_bathroom {
+                position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+                background: transparent url('images/ikea/45267.jpg') no-repeat;
+                background-size: cover;
+			}
+            #hc_bathroom .hc_set img {
+                position: absolute;
+                top: 0;
+				left: 0;
+                display: none;
+				width: 100%;
+            }
+ 
+            #hc_bathroom .hc_set img.bath1_godmorgon { left: 35px; }
+            #hc_bathroom .hc_set img.bath4_ragrund { left: 40px; }
+            #hc_bathroom .hc_set img.bath3_hemnes { left: -20px; }
+			
+			
+          .product_selected {
+                display: block !important;
+            }
+            #hc_list {
+				position: absolute;
+				top: 0;
+				display: none;
+				width: 100%;
+				} 
+			
+			#hc_list table {
+                width: 75%;
+                float: left;
+            }
+            #hc_list table td {
+                border-bottom: 1px solid #ddd;
+				padding: .3em;
+				font-size: .5em;
+				vertical-align: top;
+				
+            }
+            #hc_list table {
+                border-right: 1px solid #999;
+            }
+            #hc_list .hc_buttonset {
+                width: 25%;
+                float: left;
+ 				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: .7em;
+           }
+			#hc_list td {
+				text-align: left;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				}
+			#hc_list .hc_name, #hc_list .hc_desc { 
+				font-weight: bold; 				
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 75%;
+				overflow: hidden;
+				display: block;
+				}
+			#hc_list thead { 
+				background-color: #faf9f4;
+				font-weight: bold;
+				}
+			#hc_list tfoot { 
+				font-weight: bold;
+			 }
+			#hc_list .hc_price {
+				text-align: right;
+				font-weight: bold;
+			}
+			#hc_list .hc_right {
+				text-align: right;
+			}
+			#hc_list .hc_total {
+				white-space: nowrap;
+			}
+			#hc_list .hc_learn_more {
+				width: 100px;
+			}
+
+		a.btn_learnmore {
+            width: 60px;
+            background: transparent url('images/ikea/btn_learnMore.png') no-repeat;
+            text-indent: -9999px;
+            background-size: contain;
+            height: 25px;
+            right: 0;
+			display: block;
+			margin: 0 auto;
+            }
+            a.btn_shoponline {
+                width: 70px;
+                background: transparent url('images/ikea/45260.png') no-repeat;
+                text-indent: -9999px;
+                background-size: contain;
+                height: 40px;
+                display: block;
+                margin: 28px auto 5px;
+            }
+            a.btn_findstore {
+                width: 70px;
+                background: transparent url('images/ikea/45261.png') no-repeat;
+                text-indent: -9999px;
+                background-size: contain;
+                height: 40px;
+                display: block;
+                margin: 5px auto;
+            }
+			
+			#hc_email {
+				clear: both;
+				text-align: left;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: .7em;
+				font-weight: bold;
+			}
+			#hc_email .hc_email_elements {
+				text-align: center;	
+			}
+			#hc_email .hc_email_elements input {
+				width: 150px;
+			}
+            a#btn_email {
+                width: 92px;
+                background: transparent url('images/ikea/45270.png') no-repeat;
+                text-indent: -9999px;
+                background-size: contain;
+                height: 40px;
+                display: inline-block;
+				position: relative;
+				top: -5px;
+            }
+			
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+        <script src="scripts/ikea/44625.js"></script>
+        <!--<script src="scripts/ikea/hc_framework-0_2.js"></script>-->
+        <script src="scripts/ikea/hc_framework.js"></script>
+        <script type="text/javascript">
+            "use strict";
+            var hc_ = new hc_({
+                "prod": true,
+                "clientId": "____",
+                "targetUrl": "",
+                "publisherId": "%p%",
+                "augmeId": "%augmeid%",
+                "adId": "%ad_id%",
+                "campaignId": "%c%",
+                "track": ""
+            });
+            /*
+				 All actionable classes have a call back.  The callback is the class name with _after at the end. These are part of the hc_ object.  Examples
+				 hc_.events.hc_expand_after = function () { };
+				 hc_.events.hc_closebtn_after = function () { };
+				 hc_.events.hc_tabs_button_after = function () { };
+				 these are call after the action takes place.
+			 */
+
+/* hc_$("#hc_richmedia").append('<img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=10717603&PluID=0&ord='+new Date().getTime()+'&rtu=-1&mb=1&on=impression" style="position:absolute;height:1px;width:1px;" />');	 */
+
+
+            var selection1, selection2, selection3, selection4;
+            var selections = [];
+
+            hc_$(document).ready(function() {
+
+                hc_$('.hc_btn_bedroom').click(function(e) {
+                    hc_$('#hc_bedroom').show();
+                    hc_$('#hc_bathroom').hide();
+                    hc_$('#hc_bed1_flexslider').show();
+                    hc_$('.hc_btn_bathroom').removeClass('selected');
+                    hc_$('.hc_btn_bedroom').addClass('selected');
+                    hc_$('.hc_set img').removeClass('product_selected');
+                    hc_$('.flexslider').hide();
+                    hc_$('#hc_bed1_flexslider').show();
+                    hc_$('.flex-viewport').hide();
+                    hc_$('.flex-direction-nav').hide();
+                    hc_$('#btn_selectBed1').show();
+                    hc_$('.hc_btnNext').hide();
+					selections.length = 0;
+   					
+                });
+                hc_$('.hc_btn_bathroom').click(function(e) {
+                    hc_$('#hc_bedroom').hide();
+                    hc_$('#hc_bathroom').show();
+                    hc_$('#hc_bath1_flexslider').show();
+                    hc_$('.hc_btn_bathroom').addClass('selected');
+                    hc_$('.hc_btn_bedroom').removeClass('selected');
+                    hc_$('.hc_set img').removeClass('product_selected');
+                    hc_$('.flexslider').hide();
+                    hc_$('#hc_bath1_flexslider').show();
+                    hc_$('.flex-viewport').hide();
+                    hc_$('.flex-direction-nav').hide();
+                    hc_$('#btn_selectBath1').show();
+                    hc_$('.hc_btnNext').hide();
+					selections.length = 0;
+                });
+                hc_$('.hc_btn_back').click(function(e) {
+                    hc_$('#hc_tabluated').hide();
+                    hc_$('#hc_list').hide();
+                    hc_$('.hc_header_back').hide();
+                    hc_$('#hc_bathroom').show();
+                    hc_$('.flex-viewport').hide();
+                    hc_$('#hc_bath1_flexslider').show();
+                    hc_$('.hc_header_select').show();
+                    hc_$('.hc_btn_bathroom').addClass('selected');
+                    hc_$('.hc_btn_bedroom').removeClass('selected');
+                    hc_$('.hc_set img').removeClass('product_selected');
+                    hc_$('.hc_btn_bedroom').removeClass('selected');
+                    hc_$('.flex-direction-nav').hide();
+                    hc_$('#btn_selectBath1').show();
+                    hc_$('.hc_btnNext').hide();
+					selections.length = 0;
+                });
+                hc_$('#btn_selectBed1').click(function(e) {
+                    /* display bed options */
+                    e.preventDefault();
+                    hc_$('#btn_selectBed1').hide();
+                    hc_$('#hc_bed1_flexslider').show();
+                     hc_$('#hc_bed1_flexslider .flex-viewport').show();
+                     hc_$('#hc_bed1_flexslider .flex-direction-nav').show();
+                   hc_$('#hc_bed1_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                });
+                hc_$('#hc_bed1_flexslider li a').click(function(e) {
+                    /* display bed & next button */
+                    hc_$('#hc_bed1_flexslider').hide();
+                    var whichBed = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + whichBed).addClass('product_selected');
+                    selection1 = whichBed;
+                    selections.push(whichBed);
+                    hc_$('#btn_selectBed2').show();
+                    hc_$('#hc_bed2_flexslider').fadeIn('slow');
+                });
+                hc_$('#btn_selectBed2').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBed2').hide();
+                     hc_$('#hc_bed2_flexslider .flex-viewport').show();
+                     hc_$('#hc_bed2_flexslider .flex-direction-nav').show();
+                   hc_$('#hc_bed2_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                });
+                hc_$('#hc_bed2_flexslider li a').click(function(e) {
+                    /* display bed & next button */
+                    hc_$('#hc_bed2_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + which).addClass('product_selected');
+                    selection2 = which;
+                    selections.push(which);
+                    hc_$('#btn_selectBed3').show();
+                    hc_$('#hc_bed3_flexslider').fadeIn('slow');
+                });
+                hc_$('#btn_selectBed3').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBed3').hide();
+                      hc_$('#hc_bed3_flexslider .flex-direction-nav').show();
+                   hc_$('#hc_bed3_flexslider .flex-viewport').show();
+                    hc_$('#hc_bed3_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '3') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                });
+                hc_$('#hc_bed3_flexslider li a').click(function(e) {
+                    /* display bed & next button */
+                    hc_$('#hc_bed3_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + which).addClass('product_selected');
+                    selection3 = which;
+                    selections.push(which);
+                    hc_$('#btn_selectBed4').show();
+                    hc_$('#hc_bed4_flexslider').fadeIn('slow');
+                });
+                hc_$('#btn_selectBed4').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBed4').hide();
+                      hc_$('#hc_bed4_flexslider .flex-direction-nav').show();
+                   hc_$('#hc_bed4_flexslider .flex-viewport').show();
+                    hc_$('#hc_bed4_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '3') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                });
+                hc_$('#hc_bed4_flexslider li a').click(function(e) {
+                    /* display bed & next button */
+                    hc_$('#hc_bed4_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    console.log(which);
+                    hc_$('.' + which).addClass('product_selected');
+                    selection4 = which;
+                    selections.push(which);
+                    hc_$('#hc_bedroom a.hc_btnNext').show();
+                    console.log(selection1 + ' ' + selection2 + ' ' + selection3 + ' ' + selection4);
+                });
+
+
+                hc_$('#btn_selectBath1').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBath1').hide();
+                     hc_$('#hc_bath1_flexslider .flex-direction-nav').show();
+                    hc_$('#hc_bath1_flexslider .flex-viewport').show();
+                    hc_$('#hc_bath1_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                           /* hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+
+                });
+                hc_$('#hc_bath1_flexslider li a').click(function(e) {
+                    hc_$('#hc_bath1_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + which).addClass('product_selected');
+                    selection1 = which;
+                    selections.push(which);
+                    hc_$('#btn_selectBath2').show();
+                    hc_$('#hc_bath2_flexslider').fadeIn('slow');
+                });
+
+                hc_$('#btn_selectBath2').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBath2').hide();
+                    hc_$('#hc_bath2_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                           /* hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                     hc_$('#hc_bath2_flexslider .flex-direction-nav').show();
+                    hc_$('#hc_bath2_flexslider .flex-viewport').show();
+
+                });
+                hc_$('#hc_bath2_flexslider li a').click(function(e) {
+                    hc_$('#hc_bath2_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + which).addClass('product_selected');
+                    selection2 = which;
+                    selections.push(which);
+                     hc_$('#btn_selectBath3').show();
+                   hc_$('#hc_bath3_flexslider').fadeIn('slow');
+                });
+
+                hc_$('#btn_selectBath3').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBath3').hide();
+                   hc_$('#hc_bath3_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                           /* hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+                     hc_$('#hc_bath3_flexslider .flex-direction-nav').show();
+                     hc_$('#hc_bath3_flexslider .flex-viewport').show();
+
+                });
+                hc_$('#hc_bath3_flexslider li a').click(function(e) {
+                    hc_$('#hc_bath3_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    hc_$('.' + which).addClass('product_selected');
+                    selection3 = which;
+                    selections.push(which);
+                    hc_$('#btn_selectBath4').show();
+                    hc_$('#hc_bath4_flexslider').fadeIn('slow');
+                });
+
+                hc_$('#btn_selectBath4').click(function(e) {
+                    e.preventDefault();
+                    hc_$('#btn_selectBath4').hide();
+                    hc_$('#hc_bath4_flexslider').flexslider({
+                        animation: "slide",
+                        animationLoop: false,
+                        reverse: false,
+                        startAt: 0,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: true,
+                        touch: true,
+                        start: function(slider) {
+                            var slideSet = slider.find(".flex-active-slide").parent().parent().attr("class");
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            /*hc_$("#hc_richmedia").append('<img src="#trk:' + slideSet + '-' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        },
+                        after: function(slider) {
+                            var slideId = slider.find(".flex-active-slide").attr("id");
+                            if (slideId === '0') {
+                                hc_$(".flex-prev").hide();
+                            } else if (slideId === '5') {
+                                hc_$(".flex-next").hide();
+                            } else {
+                                hc_$(".flex-prev").show();
+                            }
+                           /* hc_$("#hc_richmedia").append('<img src="#trk:' + slideId + '#?cb=' + new Date().getTime() +
+                                '" style="position:absolute;height:1px;width:1px;" />');*/
+                        }
+                    });
+
+                     hc_$('#hc_bath4_flexslider .flex-direction-nav').show();
+                    hc_$('#hc_bath4_flexslider .flex-viewport').show();
+                });
+                hc_$('#hc_bath4_flexslider li a').click(function(e) {
+                    hc_$('#hc_bath4_flexslider').hide();
+                    var which = hc_$(this).parent('li').attr('id');
+                    console.log(which);
+                    hc_$('.' + which).addClass('product_selected');
+                    selection4 = which;
+                    selections.push(which);
+                    hc_$('#hc_bathroom a.hc_btnNext').show();
+                    console.log(selection1 + ' ' + selection2 + ' ' + selection3 + ' ' + selection4);
+                });
+                hc_$('.hc_btnNext').click(function(e) {
+                    hc_$('#hc_bedroom').hide();
+                    hc_$('#hc_bathroom').hide();
+                    hc_$('.hc_header_select').hide();
+                    hc_$('.hc_header_back').show();
+                    hc_$('#hc_list').show();
+                    renderSelections();
+
+                });
+                hc_$('.btn_shoponline').click(function(e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var url = "http://ikea.shoplocal.com/IKEA/BrowseByPage?storeid=2500063&promotionviewmode=2&promotioncode=Ikea-141208&listingid=0&sneakpeek=N&pagenumber=1";
+					/* var url = "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9702871&PluID=0&ord="+new Date().getTime()+"&mb=1&on=click_through"; */
+					window.location = url;
+                });
+
+                function renderSelections() {
+					hc_$('#hc_list tbody tr').remove();
+
+                    var tr_item = '<tr><td><span class="hc_name" /><span class="hc_desc" /></td><td class="hc_price"></td><td class="learn_more"><a href="javascript: void(0);" class="btn_learnmore">Learn More</a></td></tr>';
+                    var data_item = null;
+                    var tr_item_jq = null;
+                    var selection_type = hc_$('.hc_header_select .selected').data('selection_type');
+                    var price_total = 0.0;
+
+                    hc_$.each(selections, function(key, value) {
+                        data_item = hc_$.grep(data, function(ele){
+                            return (ele.hc_id === value);
+                        });
+
+                        tr_item_jq = hc_$(tr_item);
+
+                        hc_$('.hc_name', tr_item_jq).text(data_item[0].name);
+                        hc_$('.hc_desc', tr_item_jq).text(data_item[0].desc);
+                        hc_$('.btn_learnmore', tr_item_jq).attr('href', (data_item[0].url));
+                        hc_$('.hc_price', tr_item_jq).text('$ ' + data_item[0].price);
+                        hc_$('#hc_list tbody').append(tr_item_jq);
+                        price_total += parseFloat(data_item[0].price);
+
+                    });
+
+                    hc_$('#hc_list tfoot .hc_total').text('$ '+ price_total.toString());
+
+                }
+
+                var data = [{
+                    "hc_id": "bath1_odensvik",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S59906048/#/S19906045",
+                    "price": "379",
+                    "ikea": "PE362683",
+                    "name": "HEMNES/ODENSVIK",
+                    "desc": "sink with 2 drawers, black-brown stain."
+                }, {
+                    "hc_id": "bath2_hemnes_black",
+                    "url": "http://www.ikea.com/us/en/catalog/products/60217676/",
+                    "price": "170",
+                    "ikea": "PE303177",
+                    "name": "HEMNES",
+                    "desc": "mirror cabinet with 2 drawers, black-brown stain"
+                }, {
+                    "hc_id": "bath4_hemnes",
+                    "url": "http://www.ikea.com/us/en/catalog/products/90217670/",
+                    "price": "250",
+                    "ikea": "PE303179",
+                    "name": "HEMNES",
+                    "desc": "high cabinet with mirror door, black-brown stain. "
+                }, {
+                    "hc_id": "bath1_godmorgon_lg",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S59023518/",
+                    "price": "429",
+                    "ikea": "PE408657",
+                    "name": "GOODMORGON/BR\u00c5VIKEN",
+                    "desc": "sink cabinete with 2 drawers, white "
+                }, {
+                    "hc_id": "bath2_storjorm",
+                    "url": "http://www.ikea.com/us/en/catalog/products/60250067/",
+                    "price": "260",
+                    "ikea": "PE367133",
+                    "name": "STROJORM",
+                    "desc": "2-drawer mirror cabinet with LED lights"
+                }, {
+                    "hc_id": "bath1_godmorgon_sm",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S49023439/",
+                    "price": "329",
+                    "ikea": "PE408263",
+                    "name": "GODMORGON/BR\u00c5VIKEN",
+                    "desc": "sink cabinet with 2 drawers, white"
+                }, {
+                    "hc_id": "bath2_ragrund",
+                    "url": "http://www.ikea.com/us/en/catalog/products/70253070/",
+                    "price": "59.99",
+                    "ikea": "PE344230",
+                    "name": "R\u00c5GRUND",
+                    "desc": "mirror, bamboo"
+                }, {
+                    "hc_id": "bath3_ragrund",
+                    "url": "http://www.ikea.com/us/en/catalog/products/90253074/",
+                    "price": "49.99",
+                    "ikea": "PE344267",
+                    "name": "R\u00c5GRUND",
+                    "desc": "chair with towel rack, bamboo"
+                }, {
+                    "hc_id": "bath4_ragrund",
+                    "url": "http://www.ikea.com/us/en/catalog/products/30253072/",
+                    "price": "29.99",
+                    "ikea": "PE344251",
+                    "name": "R\u00c5GRUND",
+                    "desc": "toilet roll stand, bamboo"
+                }, {
+                    "hc_id": "bed1_fjell",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S89910100/",
+                    "price": "449",
+                    "ikea": "PE315677",
+                    "name": "FJELL",
+                    "desc": "bed frame with storage"
+                }, {
+                    "hc_id": "bed3_fjell",
+                    "url": "http://www.ikea.com/us/en/catalog/products/40222626/",
+                    "price": "299",
+                    "ikea": "PE307773",
+                    "name": "FJELL",
+                    "desc": "4-drawer chest pine"
+                }, {
+                    "hc_id": "bed4_fjell",
+                    "url": "http://www.ikea.com/us/en/catalog/products/60222630/",
+                    "price": "449",
+                    "ikea": "PE307775",
+                    "name": "FJELL",
+                    "desc": "wardrobe 2-drawers, pine"
+                }, {
+                    "hc_id": "bed2_vettre",
+                    "url": "http://www.ikea.com/us/en/catalog/products/00222628/",
+                    "price": "49.99",
+                    "ikea": "PE324869",
+                    "name": "VETTRE",
+                    "desc": "nightsand, turquise"
+                }, {
+                    "hc_id": "bed1_malm",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S19931634/",
+                    "price": "399",
+                    "ikea": "PE328440",
+                    "name": "MALM",
+                    "desc": "high bed frame /4 storage boxes, black brown"
+                }, {
+                    "hc_id": "bed4_kallax",
+                    "url": "http://www.ikea.com/us/en/catalog/products/50278482/#/80278838",
+                    "price": "89.99",
+                    "ikea": "PE383243",
+                    "name": "KALLAX",
+                    "desc": "shelving unit, high gloss red"
+                }, {
+                    "hc_id": "bed2_kallax",
+                    "url": "http://www.ikea.com/us/en/catalog/products/40278840/",
+                    "price": "49.99",
+                    "ikea": "PE383251",
+                    "name": "KALLAX",
+                    "desc": "shelving unit, high gloss red "
+                }, {
+                    "hc_id": "bed3_lack",
+                    "url": "http://www.ikea.com/us/en/catalog/products/50193732/",
+                    "price": "16.99",
+                    "ikea": "PE268299",
+                    "name": "LACK",
+                    "desc": "shelf, high gloss red"
+                }, {
+                    "hc_id": "bed1_hurdal",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S09019627/",
+                    "price": "399",
+                    "ikea": "PE399090",
+                    "name": "HURDAL",
+                    "desc": "bed frame, light brown"
+                }, {
+                    "hc_id": "bed2_hurdal",
+                    "url": "http://www.ikea.com/us/en/catalog/products/50268831/",
+                    "price": "99",
+                    "ikea": "PE397595",
+                    "name": "HURDAL",
+                    "desc": "nightstand, green"
+                }, {
+                    "hc_id": "bed4_hurdal",
+                    "url": "http://www.ikea.com/us/en/catalog/products/10268852/",
+                    "price": "399",
+                    "ikea": "PE404487",
+                    "name": "HURDAL",
+                    "desc": "linen cabinet, green"
+                }, {
+                    "hc_id": "bed1_nordli",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S09911071",
+                    "price": "349",
+                    "ikea": "PE327876",
+                    "name": "NORDLI",
+                    "desc": "bed frame, white"
+                }, {
+                    "hc_id": "bed2_sveio",
+                    "url": "http://www.ikea.com/us/en/catalog/products/30219484/",
+                    "price": "149",
+                    "ikea": "PE306201",
+                    "name": "SVEIO",
+                    "desc": "chest with 2- drawers"
+                }, {
+                    "hc_id": "bed3_ekby",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S49931798/",
+                    "price": "75",
+                    "ikea": "PE337689",
+                    "name": "EKBY J\u00c4RPEN/EKBY G\u00c4LL\u00d6",
+                    "desc": "wall shelf"
+                }, {
+                    "hc_id": "bed1_svelvik",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S79889566/",
+                    "price": "249",
+                    "ikea": "PE315717",
+                    "name": "EKBY J\u00c4RPEN/EKBY G\u00c4LL\u00d6",
+                    "desc": "wall shelf"
+                }, {
+                    "hc_id": "bed4_hemnes",
+                    "url": "http://www.ikea.com/us/en/catalog/products/10239280/",
+                    "price": "229",
+                    "ikea": "PE311002",
+                    "name": "HEMNES",
+                    "desc": "8-drawer dresser, white"
+                }, {
+                    "hc_id": "bed2_hemnes",
+                    "url": "http://www.ikea.com/us/en/catalog/products/90121234/",
+                    "price": "69.99",
+                    "ikea": "PE191678",
+                    "name": "HEMNES",
+                    "desc": "night stand"
+                }, {
+                    "hc_id": "bath1_godmorgon",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S29903254/",
+                    "price": "499",
+                    "ikea": "PE303479",
+                    "name": "GODMORGON/ODENSVIK",
+                    "desc": "sink cabinet with 4 drawers"
+                }, {
+                    "hc_id": "bath4_godmorgon",
+                    "url": "http://www.ikea.com/us/en/catalog/products/20226183/",
+                    "price": "80",
+                    "ikea": "PE299619",
+                    "name": "GODMORGON",
+                    "desc": "wall cabinet with 1 door"
+                }, {
+                    "hc_id": "bath3_godmorgon",
+                    "url": "http://www.ikea.com/us/en/catalog/products/00226179/",
+                    "price": "230",
+                    "ikea": "PE306435",
+                    "name": "GODMORGON",
+                    "desc": "high cabinet "
+                }, {
+                    "hc_id": "bath2_godmorgon",
+                    "url": "http://www.ikea.com/us/en/catalog/products/50149131/",
+                    "price": "50",
+                    "ikea": "PE228461",
+                    "name": "GODMORGON",
+                    "desc": "mirror"
+                }, {
+                    "hc_id": "bath1_hemnes",
+                    "url": "http://www.ikea.com/us/en/catalog/products/S59906072/",
+                    "price": "249",
+                    "ikea": "PE303514",
+                    "name": "HEMNES/R\u00c4TTVIKEN",
+                    "desc": "sink cabinet with 2-drawers"
+                }, {
+                    "hc_id": "bath3_hemnes",
+                    "url": "http://www.ikea.com/us/en/catalog/products/50223625/",
+                    "price": "79.99",
+                    "ikea": "PE303192",
+                    "name": "HEMNES",
+                    "desc": "bench, white "
+                }, {
+                    "hc_id": "bath2_hemnes_white",
+                    "url": "http://www.ikea.com/us/en/catalog/products/70217671/",
+                    "price": "140",
+                    "ikea": "PE303194",
+                    "name": "HEMNES",
+                    "desc": "mirror cabinet with 1 door"
+                }];
+
+            });
+        </script>
+        <script type="text/javascript" src="mraid.js"></script>
+
+
+        <div class="hc_initial_view">
+            <a href="javascript: void(0);" class="hc_expand"></a>
+        </div>
+
+        <div class="hc_content" id="hc_content" style="display:none;">
+            <div id="hc_header">
+                <div class="hc_closebtn" style="display:none;">X</div>
+                <img src="images/ikea/45172.png" alt="IKEA" class="hc_logo" />
+                <img src="images/ikea/45173.png" alt="design a room" class="hc_designroom" />
+               <div class="hc_header_select">
+                    <a href="javascript: void(0);" class="hc_btn_bedroom" data-selection_type="hc_bedroom">bedroom</a>
+                    <a href="javascript: void(0);" class="hc_btn_bathroom selected" data-selection_type="hc_bathroom">bathroom</a>
+                </div>
+                <div class="hc_header_back">
+                    <a href="javascript: void(0);" class="hc_btn_back">back</a>
+                </div>
+            </div>
+			<div id="hc_stage">
+            <img src="images/ikea/45485.jpg" class="hc_shim" />
+            <div id="hc_bedroom">
+                <div class="hc_set">
+                    <div class="hc_choicethree">
+                        <img src="images/ikea/45195.png" class="bed3_ekby" />
+                        <img src="images/ikea/45197.png" class="bed3_fjell" />
+                        <img src="images/ikea/45196.png" class="bed3_lack" />
+                    </div>
+                    <div class="hc_choiceone">
+                        <img src="images/ikea/bed1_fjell.png" class="bed1_fjell" />
+                        <img src="images/ikea/bed1_hurdal.png" class="bed1_hurdal" />
+                        <img src="images/ikea/bed1_malm.png" class="bed1_malm" />
+                        <img src="images/ikea/bed1_snordli.png" class="bed1_nordli" />
+                        <img src="images/ikea/bed1_svelvik.png" class="bed1_svelvik" />
+                    </div>
+                    <div class="hc_choicetwo">
+                        <img src="images/ikea/bed2_hemnes.png" class="bed2_hemnes" />
+                        <img src="images/ikea/bed2_hurdal.png" class="bed2_hurdal" />
+                        <img src="images/ikea/bed2_kallax.png" class="bed2_kallax" />
+                        <img src="images/ikea/bed2_sveio.png" class="bed2_sveio" />
+                        <img src="images/ikea/bed2_vettre.png" class="bed2_vettre" />
+                    </div>
+                    <div class="hc_choicefour">
+                        <img src="images/ikea/bed4_hemnes.png" class="bed4_hemnes" />
+                        <img src="images/ikea/bed4_fjell.png" class="bed4_fjell" />
+                        <img src="images/ikea/bed4_kallax.png" class="bed4_kallax" />
+                        <img src="images/ikea/bed4_hurdal.png" class="bed4_hurdal" />
+                    </div>
+
+                </div>
+
+                <div id="hc_bed1_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bed1_svelvik">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed1_nordli">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed1_malm">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed1_fjell">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed1_hurdal">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBed1">place bed</a>
+                </div>
+                <div id="hc_bed2_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bed2_hemnes">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed2_sveio">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed2_vettre">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed2_kallax">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed2_hurdal">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBed2">place next item</a>
+                </div>
+                <div id="hc_bed3_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bed3_ekby">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed3_fjell">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed3_lack">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBed3">place next item</a>
+                </div>
+                <div id="hc_bed4_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bed4_hemnes">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed4_fjell">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed4_kallax">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bed4_hurdal">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBed4">place next item</a>
+                </div>
+
+                <a href="javascript: void(0);" class="hc_btnNext"></a>
+            </div>
+
+            <div id="hc_bathroom">
+                <div class="hc_set">
+                    <div class="hc_choicethree">
+                        <img src="images/ikea/bath3_godmorgon.png" class="bath3_godmorgon" />
+                        <img src="images/ikea/bath3_ragrund.png" class="bath3_ragrund" />
+                        <img src="images/ikea/bath3_hemnes.png" class="bath3_hemnes" />
+                    </div>
+                    <div class="hc_choiceone">
+                        <img src="images/ikea/bath1_hemnes_white.png" class="bath1_hemnes" />
+                        <img src="images/ikea/bath1_odensvik.png" class="bath1_godmorgon" />
+                        <img src="images/ikea/bath1_braviken_sm.png" class="bath1_godmorgon_sm" />
+                        <img src="images/ikea/bath1_braviken_lg.png" class="bath1_godmorgon_lg" />
+                        <img src="images/ikea/bath1_hemnes.png" class="bath1_odensvik" />
+                    </div>
+                    <div class="hc_choicetwo">
+                        <img src="images/ikea/bath2_hemnes_white.png" class="bath2_hemnes_white" />
+                        <img src="images/ikea/bath2_godmorgon.png" class="bath2_godmorgon" />
+                        <img src="images/ikea/bath2_ragrund.png" class="bath2_ragrund" />
+                        <img src="images/ikea/bath2_storjorm.png" class="bath2_storjorm" />
+                        <img src="images/ikea/bath2_hemnes.png" class="bath2_hemnes_black" />
+                    </div>
+                    <div class="hc_choicefour">
+                        <img src="images/ikea/bath4_godmorgon.png" class="bath4_godmorgon" />
+                        <img src="images/ikea/bath4_hemnes.png" class="bath4_hemnes" />
+                        <img src="images/ikea/bath4_ragrund.png" class="bath4_ragrund" />
+                    </div>
+
+                </div>
+
+                <div id="hc_bath1_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bath1_hemnes">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath1_godmorgon">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath1_godmorgon_sm">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath1_godmorgon_lg">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath1_odensvik">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBath1">place sink</a>
+                </div>
+                <div id="hc_bath2_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bath2_hemnes_white">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath2_godmorgon">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath2_ragrund">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath2_storjorm">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath2_hemnes_black">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBath2">place next item</a>
+                </div>
+                <div id="hc_bath3_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bath3_godmorgon">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath3_ragrund">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath3_hemnes">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBath3">place next item</a>
+                </div>
+                <div id="hc_bath4_flexslider" class="flexslider">
+                    <ul class="slides">
+                        <li id="bath4_godmorgon">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath4_ragrund">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                        <li id="bath4_hemnes">
+                            <a href="javascript: void(0);"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript: void(0);" id="btn_selectBath4">place next item</a>
+                </div>
+                <a href="#" class="hc_btnNext"></a>
+            </div>
+
+            <div id="hc_list">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <td>Product</td>
+                            <td class="hc_price">Price</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total price:</td>
+                            <td class="hc_total hc_price">$$$$$$</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+               <div class="hc_buttonset">
+                    <a href="http://m.ikea.com/us/en/" class="btn_shoponline"></a>
+                    or
+                    <a href="http://m.ikea.com/us/en/stores/" class="btn_findstore"></a>
+                </div>
+                    <div id="hc_email">
+                        <div class="hc_email_title">Share product list:</div>
+                        <div class="hc_email_elements">
+                        Email: <input type="email" id="email_address" />
+                        <a href="javascript: void(0);" id="btn_email">share list</a>
+                        </div>
+                    </div>	
+            </div>
+              </div>
+           </div>
+
+
+    </div>
+<script>
+hc_$('#btn_email').click(function(e){
+  e.preventDefault();
+  var url = 'http://ikea-buildroom.imp.aug.me/api/email?email2='+hc_$('#email_address').val()+'&items='+selections.join();
+  hc_$.getJSON(url+'&callback=?', function(a){
+  });
+  hc_$('.hc_email_elements').html('Your email has been sent. Thanks!');
+});
+</script>
